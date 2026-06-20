@@ -15,6 +15,21 @@ class q2
         {
             array[i]= scan.nextInt();
         }
+        if(size%2 == 0)
+        {   
+            int index = size/2;
+            int middleleft = array[index-1];
+            int middleright = array[index];
+            System.out.print("Middle elements:");
+            System.out.print(" "+ middleleft +" "+ middleright);  
+        }
+        else 
+        {
+            int index = size/2;
+            int middle = array[index];
+            System.out.print("Middle element:");
+            System.out.print(" "+ middle);
+        }
         
 
     }
